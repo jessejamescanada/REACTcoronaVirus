@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{box-sizing: border-box;}
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+letter-spacing: .8px;
+color: rgb(59, 59, 59);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2{
+  color: rgb(36, 36, 36);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 1000px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.worldContainer{}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.countryContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 15px;
+}
+.usaContainer{}
+
+.canadaContainer{}
+.red{color: rgb(195, 47, 47);}
+.green{color: rgb(0, 199, 0);}
+.yellow{color: rgb(188, 218, 19);}
+
+@media(max-width: 1000px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .worldContainer{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #888;
+    width: 100%;
+  }
+  .worldContainer h3{
+    margin: 7px;
+  }
+
+  .worldContainer time{
+    padding-bottom: 5px;
+  }
+  .usaContainer{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #888;
+  }
+  .usaContainer h2{
+    margin-bottom: 10px;
+  }
+  .usaContainer h3{
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .countryContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .chartjs-render-monitor{
+    display: none;
+  }
+  .canadaContainer{
+    margin-bottom: 10px;
+  }
+  .canadaContainer h2{
+    margin-bottom: 10px;
+  }
+  .canadaContainer h3{
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+@media(max-width: 800px){
+  .countryContainer{
+    margin-top: 10px;
   }
 }
