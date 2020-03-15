@@ -88,6 +88,9 @@ h1, h2{
     margin-top: 6px;
     margin-bottom: 6px;
   }
+  .footer{
+    font-size: 10px;
+  }
 }
 
 @media(max-width: 800px){
