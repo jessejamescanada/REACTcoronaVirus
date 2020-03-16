@@ -21,10 +21,3 @@ function App() {
 
 export default App;
 
-// {item.title.length > 100
-//   ? `${item.title.substring(0, 100)}...`
-//   : item.title}
-
-//   {item.description.length > 200
-//     ? `${item.description.substring(0, 200)}...`
-//     : item.description}
