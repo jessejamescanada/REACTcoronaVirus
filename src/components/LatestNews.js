@@ -10,7 +10,6 @@ export default class LatestNews extends Component {
     await fetch(
       "http://newsapi.org/v2/everything?" +
         "qInTitle=Coronavirus&" +
-        "from=2020-03-15&" +
         "language=en&" +
         "sortBy=publishedAt&" +
         "pageSize=12&" +
