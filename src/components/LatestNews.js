@@ -8,7 +8,7 @@ export default class LatestNews extends Component {
 
   componentDidMount = async () => {
     await fetch(
-      "http://newsapi.org/v2/everything?" +
+      "https://newsapi.org/v2/everything?" +
         "qInTitle=Coronavirus&" +
         "language=en&" +
         "sortBy=publishedAt&" +
