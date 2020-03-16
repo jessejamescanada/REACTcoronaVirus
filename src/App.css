@@ -13,7 +13,7 @@ h1, h2{
 }
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -37,6 +37,44 @@ h1, h2{
 .red{color: rgb(195, 47, 47);}
 .green{color: rgb(0, 199, 0);}
 .yellow{color: rgb(188, 218, 19);}
+
+.articleImage{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.articleImage:hover{
+  opacity: .7;
+  /* transform: scale(1.2); */
+}
+
+.header{
+  margin-top: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.newsContainer{
+  margin-top: 20px;
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.newsContainer a{
+  text-decoration: none;
+}
+.newsContainer p {
+  color: #222;
+}
+
+@media(max-width: 1250px){
+  .newsContainer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @media(max-width: 1000px){
   .container{
@@ -91,10 +129,27 @@ h1, h2{
   .footer{
     font-size: 10px;
   }
+  .newsContainer{
+    margin-top: 35px;
+    margin: 10px;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  }
 }
 
 @media(max-width: 800px){
   .countryContainer{
     margin-top: 10px;
   }
+  .canadaContainer{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #888;
+  }
+  .newsContainer{
+    margin-top: 35px;
+    grid-template-columns: 1fr;
+  }
 }
+
+

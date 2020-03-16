@@ -7,7 +7,7 @@ export default class Footer extends Component {
         <p>Data API provided by -
 						<a target="blank" href="https://github.com/mathdroid/covid-19-api">
 							 Mathdroid
-						</a></p>
+						</a> News powered by <a target='blank' href='https://newsAPI.org'>NewsAPI.org</a></p>
       </div>
     )
   }
