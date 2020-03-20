@@ -10,9 +10,10 @@ import './App.css';
 function App() {
   return (
     <div className="container">
+      <Header title={{head: 'COVOID-19 Tracker'}}/>
       <FetchCarona />
       <CountrySelector />
-      <Header />
+      <Header title={{head: 'Latest News'}}/>
       <LatestNews />
       <Footer />
     </div>

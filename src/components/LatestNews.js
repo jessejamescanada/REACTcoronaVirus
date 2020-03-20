@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LatestNewsDisplay from './LatestNewsDisplay'
 
 export default class LatestNews extends Component {
   state = {
@@ -23,27 +24,9 @@ export default class LatestNews extends Component {
   };
 
   render() {
-    const stuff = this.state.articles.map(item => {
-      return (
-        <div key={item.title}>
-          <a target='blank' href={item.url}>
-            <img className="articleImage" src={item.urlToImage} alt={item.title}/>
-            <h2>
-              {item.title.length > 100
-  ? `${item.title.substring(0, 100)}...`
-  : item.title}
-            </h2>
-            <p>
-              {item.description.length > 200
-    ? `${item.description.substring(0, 200)}...`
-    : item.description}
-            </p>
-          </a>
-        </div>
-      );
-    });
+
     return <div className="newsContainer">
-      {stuff}
+      <LatestNewsDisplay articlesArray = {this.state.articles}/>
       </div>;
   }
 }
