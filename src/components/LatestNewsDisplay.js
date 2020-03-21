@@ -13,9 +13,7 @@ export default class LatestNewsDisplay extends Component {
   : item.title}
             </h2>
             <p>
-              {item.description.length > 200
-    ? `${item.description.substring(0, 200)}...`
-    : item.description}
+              {item.description}
             </p>
           </a>
         </div>
