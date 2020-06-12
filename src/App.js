@@ -13,8 +13,8 @@ function App() {
       <Header title={{head: 'COVID-19 Tracker'}}/>
       <FetchCarona />
       <CountrySelector />
-      <Header title={{head: 'Latest News'}}/>
-      <LatestNews />
+      {/* <Header title={{head: 'Latest News'}}/>
+      <LatestNews /> */}
       <Footer />
     </div>
   );
